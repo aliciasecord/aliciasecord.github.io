@@ -9,7 +9,7 @@ body{
 
 p{
   font-size:14px; 
-  line-height:1.75
+  line-height:1.75;
 }
 
 p.large{
@@ -18,20 +18,25 @@ p.large{
 
 a,a:hover,a:focus,a:active,a.active{outline:0}
 
-a{  color:#240C23}
+a{
+  color:#240C23;
+}
 
-a:hover,a:focus,a:active,a.active{color:#fec503}
+a:hover,a:focus,a:active,a.active{
+  color:#FEC503;
+}
 
 h1,h2,h3,h4,h5,h6{
   font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   text-transform:uppercase;
-  font-weight:700}
+  font-weight:700;
+}
 
-.img-centered{margin:0 auto}
+.img-centered{margin:0 auto;}
 
-.bg-light-gray{background-color:#f7f7f7}
+.bg-light-gray{background-color:#f7f7f7;}
 
-.bg-darkest-gray{background-color:#222}
+.bg-darkest-gray{background-color:#222;}
 
 .btn-primary{
   color:#FFE7FF;
@@ -90,29 +95,31 @@ h1,h2,h3,h4,h5,h6{
   color:#fed136;
   font-family:"Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive}
 
-.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:active,.navbar-default .navbar-brand.active{color:#fec503}
+.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:active,.navbar-default .navbar-brand.active{
+  color:#fec503
+}
 
 .navbar-default .navbar-collapse{
   border-color:rgba(255,255,255,.02)
 }
 
 .navbar-default .navbar-toggle{
-  background-color:#fed136;
-  border-color:#fed136
+  background-color:#240C23;
+  border-color:#240C23;
 }
 
-.navbar-default .navbar-toggle .icon-bar{background-color:#FFE7FF}
+.navbar-default .navbar-toggle .icon-bar{background-color:#240C23}
 
-.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{background-color:#fed136}
+.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{background-color:#240C23}
 
 .navbar-default .nav li a{
   font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   text-transform:uppercase;
   font-weight:400;
   letter-spacing:1px;
-  color:#FFE7FF}
+  color:#FFE7FF;}
 
-.navbar-default .nav li a:hover,.navbar-default .nav li a:focus{color:#fed136;outline:0}
+.navbar-default .nav li a:hover,.navbar-default .nav li a:focus{color:#fed136;outline:0;}
 
 .navbar-default .navbar-nav>.active>a{
   border-radius:0;
@@ -121,7 +128,7 @@ h1,h2,h3,h4,h5,h6{
 
 .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{
   color:#FFE7FF;
-  background-color:#fec503}
+  background-color:#240C23;}
 
 @media (min-width:768px){
   .navbar-default{
