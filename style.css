@@ -1,12 +1,20 @@
-body{overflow-x:hidden;font-family:"Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif}
+body{
+  overflow-x:hidden;
+  font-family:"Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif
+}
 
 .text-muted{color:#777}
 
 .text-primary{color:#FFE7FF}
 
-p{font-size:14px; line-height:1.75}
+p{
+  font-size:14px; 
+  line-height:1.75
+}
 
-p.large{  font-size:16px}
+p.large{
+  font-size:16px
+}
 
 a,a:hover,a:focus,a:active,a.active{outline:0}
 
@@ -75,7 +83,7 @@ h1,h2,h3,h4,h5,h6{
   background-color:#FFE7FF}
 
 .navbar-default{
-  background-color:#222;
+  background-color:#240C23;
   border-color:transparent}
 
 .navbar-default .navbar-brand{
@@ -84,9 +92,14 @@ h1,h2,h3,h4,h5,h6{
 
 .navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:active,.navbar-default .navbar-brand.active{color:#fec503}
 
-.navbar-default .navbar-collapse{border-color:rgba(255,255,255,.02)}
+.navbar-default .navbar-collapse{
+  border-color:rgba(255,255,255,.02)
+}
 
-.navbar-default .navbar-toggle{background-color:#fed136;border-color:#fed136}
+.navbar-default .navbar-toggle{
+  background-color:#fed136;
+  border-color:#fed136
+}
 
 .navbar-default .navbar-toggle .icon-bar{background-color:#FFE7FF}
 
