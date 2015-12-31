@@ -51,18 +51,18 @@ h1,h2,h3,h4,h5,h6{
 
 .btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary{
   color:#F6F6F6;
-  background-color:#;
-  border-color:#}
+  background-color:#F7F7F7;
+  border-color:#F7F7F7;}
 
 .btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary{background-image:none}
 
 .btn-primary.disabled,.btn-primary[disabled],fieldset[disabled] .btn-primary,.btn-primary.disabled:hover,.btn-primary[disabled]:hover,fieldset[disabled] .btn-primary:hover,.btn-primary.disabled:focus,.btn-primary[disabled]:focus,fieldset[disabled] .btn-primary:focus,.btn-primary.disabled:active,.btn-primary[disabled]:active,fieldset[disabled] .btn-primary:active,.btn-primary.disabled.active,.btn-primary[disabled].active,fieldset[disabled] .btn-primary.active
   {background-color:#750075;
-  border-color:#750075}
+  border-color:#750075;}
 
 .btn-primary .badge{
   color:#240C23;
-  background-color:#FFF}
+  background-color:#FFF;}
 
 .btn-xl{
   color:#FFF;
