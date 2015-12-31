@@ -8,7 +8,7 @@ body{
   line-height:1.75;
 }
 
-.text-primary{color:#F7F7F7;}
+.text-primary{color:#750075;}
 
 p{
   font-size:14px; 
@@ -22,7 +22,7 @@ p.large{
 a,a:hover,a:focus,a:active,a.active{outline:0}
 
 a{
-  color:#240C23;
+  color:#750075;
 }
 
 a:hover,a:focus,a:active,a.active{
