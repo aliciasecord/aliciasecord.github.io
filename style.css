@@ -4,11 +4,11 @@ body{
 }
 
 .text-muted{
-  color:#777
+  color:#777;
   line-height:1.75;
 }
 
-.text-primary{color:#FFE7FF}
+.text-primary{color:#F7F7F7;}
 
 p{
   font-size:14px; 
@@ -26,7 +26,7 @@ a{
 }
 
 a:hover,a:focus,a:active,a.active{
-  color:#FEC503;
+  color:#750075;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -37,12 +37,12 @@ h1,h2,h3,h4,h5,h6{
 
 .img-centered{margin:0 auto;}
 
-.bg-light-gray{background-color:#f7f7f7;}
+.bg-light-gray{background-color:#F7F7F7;}
 
 .bg-darkest-gray{background-color:#222;}
 
 .btn-primary{
-  color:#FFE7FF;
+  color:#FFF;
   background-color:#240C23;
   border-color:#240C23;
   font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -50,22 +50,22 @@ h1,h2,h3,h4,h5,h6{
   font-weight:700}
 
 .btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary{
-  color:#FFE7FF;
-  background-color:#fec503;
-  border-color:#f6bf01}
+  color:#F6F6F6;
+  background-color:#;
+  border-color:#}
 
 .btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary{background-image:none}
 
 .btn-primary.disabled,.btn-primary[disabled],fieldset[disabled] .btn-primary,.btn-primary.disabled:hover,.btn-primary[disabled]:hover,fieldset[disabled] .btn-primary:hover,.btn-primary.disabled:focus,.btn-primary[disabled]:focus,fieldset[disabled] .btn-primary:focus,.btn-primary.disabled:active,.btn-primary[disabled]:active,fieldset[disabled] .btn-primary:active,.btn-primary.disabled.active,.btn-primary[disabled].active,fieldset[disabled] .btn-primary.active
-  {background-color:#fed136;
-  border-color:#fed136}
+  {background-color:#750075;
+  border-color:#750075}
 
 .btn-primary .badge{
   color:#240C23;
-  background-color:#FFE7FF}
+  background-color:#FFF}
 
 .btn-xl{
-  color:#FFE7FF;
+  color:#FFF;
   background-color:#240C23;
   border-color:#240C23;
   font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -76,30 +76,30 @@ h1,h2,h3,h4,h5,h6{
   padding:20px 40px}
 
 .btn-xl:hover,.btn-xl:focus,.btn-xl:active,.btn-xl.active,.open .dropdown-toggle.btn-xl{
-  color:#FFE7FF;
+  color:#FFF;
   background-color:#fec503;
   border-color:#f6bf01}
 
 .btn-xl:active,.btn-xl.active,.open .dropdown-toggle.btn-xl{background-image:none}
 
 .btn-xl.disabled,.btn-xl[disabled],fieldset[disabled] .btn-xl,.btn-xl.disabled:hover,.btn-xl[disabled]:hover,fieldset[disabled] .btn-xl:hover,.btn-xl.disabled:focus,.btn-xl[disabled]:focus,fieldset[disabled] .btn-xl:focus,.btn-xl.disabled:active,.btn-xl[disabled]:active,fieldset[disabled] .btn-xl:active,.btn-xl.disabled.active,.btn-xl[disabled].active,fieldset[disabled] .btn-xl.active{
-  background-color:#fed136;
-  border-color:#fed136}
+  background-color:#750075;
+  border-color:#750075}
 
 .btn-xl .badge{
-  color:#fed136;
-  background-color:#FFE7FF}
+  color:#750075;
+  background-color:#FFF}
 
 .navbar-default{
   background-color:#240C23;
   border-color:transparent}
 
 .navbar-default .navbar-brand{
-  color:#fed136;
+  color:#750075;
   font-family:"Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive}
 
 .navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:active,.navbar-default .navbar-brand.active{
-  color:#fec503
+  color:#750075;
 }
 
 .navbar-default .navbar-collapse{
@@ -126,11 +126,11 @@ h1,h2,h3,h4,h5,h6{
 
 .navbar-default .navbar-nav>.active>a{
   border-radius:0;
-  color:#FFE7FF;
+  color:#FFF;
   background-color:#fed136}
 
 .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{
-  color:#FFE7FF;
+  color:#FFF;
   background-color:#240C23;}
 
 @media (min-width:768px){
