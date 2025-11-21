@@ -47,7 +47,9 @@ This is my personal playground. It's the crossroads where practical magic and pr
 
 It’s an evolving creation that blends my technical practice with my creative life.
 
-### 🔒 Copyright
+-----
+
+## 🔒 Copyright
 © Alicia Secord. All Rights Reserved.
 
 All content in this repository — including code, design tokens, styles, writing, layout patterns, and creative material — is protected by copyright.
