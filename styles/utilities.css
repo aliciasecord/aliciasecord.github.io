@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* UTILITIES LAYER
+    This layer contains utility classes that can be used throughout the site for specific styling needs. 
+    These classes are designed to be reusable and can be applied to any element to achieve a desired effect. 
+    Examples include text alignment, margin and padding adjustments, display properties, and more. 
+    The utilities in this layer are meant to complement the base styles defined in the reset and theme layers, providing additional flexibility for layout and design. 
+*/
+
+/* Flexbox utilities */
+.flex-row { display: flex; flex-direction: row; gap: var(--spacing-md); }
+.flex-col { display: flex; flex-direction: column; gap: var(--spacing-md); }
+.align-center { align-items: center; }
+.align-stretch { align-items: stretch; }
+.align-start { align-items: flex-start; }
+.align-end { align-items: flex-end; }
+.justify-center { justify-content: center; }
+.justify-start { justify-content: flex-start; }
+.justify-end { justify-content: flex-end; }
+.justify-space-between { justify-content: space-between; }
+.justify-space-around { justify-content: space-around; }
+
+.w-100 { width: 100%; }
+.h-100 { height: 100%; }
+
+/* Text utilities */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-uppercase { text-transform: uppercase; }

@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+:root {
+    /* FONTS */
+    --display: 'IM Fell DW Pica', Georgia, serif;
+    --sans: 'Noto Sans', Arial, Helvetica, sans-serif;
+    --serif: 'Noto Serif', 'Times New Roman', serif;
+
+    /* MAIN COLORS */
+    /* light is for light-mode */
+    --light-pink: #f0bcc6;
+    --light-pink-rgb: 240, 188, 198;
+    --light-purple: #e1d8ee;
+    --light-purple-rgb: 225, 216, 238;
+    --light-yellow: #f4eea9;
+    --light-yellow-rgb: 244, 238, 169;
+    /* dark is for dark-mode */
+    --dark-pink: #861d31;
+    --dark-pink-rgb: 134, 29, 49;
+    --dark-purple: #301b4b;
+    --dark-purple-rgb: 48, 27, 75;
+    --dark-yellow: #fbad1a;
+    --dark-yellow-rgb: 251, 173, 26;
+
+    /* ACCENT COLORS */
+    /* black and white are universal: 
+        largely black for light mode text
+        largely white for dark mode text */
+    --black: #333333;
+    --black-rgb: 51, 51, 51;
+    --white: #ffffff; 
+    --white-rgb: 255, 255, 255;
+    /* accent colors are two purples that can be used for texture
+        midnight for dark-mode
+        pastel for light-mode */
+    --midnight: #1a102b; 
+    --midnight-rgb: 26, 16, 43;
+    --pastel: #c6b4e4;
+    --pastel-rgb: 198, 180, 228;
+
+    /* OPACITY LEVELS */
+    --opacity-low: 0.25;
+    --opacity-medium: 0.5;
+    --opacity-high: 0.75;
+
+    /* SPACING */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+
+}
+
+body {font-family: var(--sans); background-color: light-dark(var(--white), var(--dark-purple)); color: light-dark(var(--black), var(--white));}
+h1, h2, h3, h4 {font-family: var(--display); color: light-dark(var(--black), var(--dark-yellow));}
+p, a {font-family: var(--serif); color: light-dark(var(--black), var(--white)); line-height: 1.6;}
+time, small {font-family: var(--sans); text-transform: uppercase; color: light-dark(var(--dark-yellow), var(--light-yellow));}
+span {color: light-dark(var(--black), var(--dark-yellow));}

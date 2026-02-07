@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html data-theme="system">
+<head>
+    <title>Alicia Secord | Portfolio, Grimoire, Digital Garden</title>
+
+    <meta name="description" content="Explore the personal website of Alicia Secord, frontend developer and designer.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="author" content="Alicia Secord">
+    <meta http-equiv="content-language" content="en">
+    <meta name="rating" content="mature" />
+
+    <meta property="og:title" content="Alicia Secord | Portfolio, Grimoire, Digital Garden" />
+    <meta property="og:description" content="The personal website of Alicia Secord, frontend developer and designer." />
+    <meta property="og:image" content="" />
+
+    <link rel="canonical" href="https://aliciasecord.com">
+    <link rel="stylesheet" href="styles.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        #hero.background-image {background-image: linear-gradient(light-dark(rgba(var(--light-purple-rgb), var(--opacity-medium)), rgba(var(--dark-purple-rgb), var(--opacity-medium))), light-dark(rgba(var(--light-purple-rgb), var(--opacity-medium)), rgba(var(--dark-purple-rgb), var(--opacity-medium)))), url('images/home-hero-bg.png'); background-position: top center;}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="inner flex-row align-center justify-space-between">
+            <p>Alicia Secord</p>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/resume">Resume</a>
+                <a href="/feed">Feed</a>
+                <a href="/contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="background-image flex-col justify-center align-center" id="hero">
+            <div class="text-center" style="margin-top: 5rem;">
+                <h1>Let's Make Something Real</h1>
+                <p>Customize Your Experience: <button id="theme-toggle" class="btn" aria-label="Toggle color theme">🌙</button></p>
+            </div>
+        </section>
+        <section class="" id="fueled-by">
+            <p>I'm fueled by <span class="fuel">sapphic yearning</span> and <span class="fuel">a good pair of boots</span></p>
+        </section>
+        <section class="inner img-module flex-row align-stretch justify-center">
+            <div class="left-img h-100">
+                <img src="images/Alicia-privateer.png" alt="">
+            </div>
+            <div class="text-module">
+                <h2>A Requiem for a Life Well Lived</h2>
+                <p>This is where I gather the pieces of a life in motion—the work that shaped me, the choices that rerouted my path, and the tiny triumphs that made the whole thing worthwhile. It’s a tapestry of projects, lessons, detours, and the magic that snuck in between milestones. Think of it as a soft-lit archive of who I’ve been, who I’m becoming, and the footprints I’m leaving behind for anyone who’s wandering their own way through the world.</p>
+            </div>
+        </section>
+        <section class="inner img-module background-color-main flex-row align-stretch gap-2">
+            <div class="img-right">
+                <img src="/images/blast-icon" alt="">
+            </div>
+            <div class="text-module">
+                <h2>When We Last Left Our Intrepid Adventurer</h2>
+                <p class="now-update">Fill in here</p>
+                <time class="now-update-timestamp">Fill in here</time>
+                <a class="btn btn-main" href="/now" title="">More From the Here and Now</a>
+            </div>
+        </section>
+        <section class="inner three-across">
+            <h2>Choose Your Path</h2>
+            <p>This site is a portfolio, a playground, a spellbook. Here’s how to explore.</p>
+
+            <article>
+                <h3>Professional Perspective</h3>
+                <p>Digital experiences crafted with care, clarity, and intention.</p>
+                <a class="btn btn-main" href="/work" title="">See My Work</a>
+            </article>
+            <article>
+                <h3>Digital Garden</h3>
+                <p>Hobbies, tinkering, experiments, myths, vegetables, and other things I'm growing.</p>
+                <a class="btn btn-main" href="/hobbies" title="">Grow with Me</a>
+            </article>
+            <article>
+                <h3>Leather Dispatch</h3>
+                <p>A gated corner for the queer, kinky, and curious.</p>
+                <a class="btn btn-main" href="/dispatch" title="">Enter with Intention</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="inner">
+        <section id="footer-left">
+            <h2>Who Is Alicia Secord?</h2>
+            <p>Dreamer. Forever mapping uncharted futures and making little rituals out of possibility.</p>
+            <p>Adventurer. Wandering through tech, magic, and real life with   equal parts courage and curiosity.</p>
+            <p>Artist. Building worlds—digital, domestic, and mythic—one intuitive brushstroke at a time.</p>
+            <p>Fool. Delighted to learn by doing, messing up, trying again, and finding wonder in the chaos.</p>
+        </section>
+        <section id="footer-nav" class="flex-col">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/feed">Feed</a>
+            <div class="footer-subnav">
+                <a href="/feed/work-projects">Work Projects</a>
+                <a href="/feed/digital-garden">Digital Garden</a>
+                <a href="/feed/leather-dispatch">Leather Dispatch</a>
+                <a href="/feed/updates">Now Updates</a>
+            </div>
+            <a href="/contact">Contact</a>
+        </section>
+        </div>
+        <section id="footer-copyright">
+            <h2>Copyright 2026. Alicia Secord. All Rights Reserved.</h2>
+            <div class="flex-row justify-center" id="footer-terms">
+                <a class="/terms/privacy-policy">Privacy Policy</a>
+                <a class="/terms/cookies">Cookies</a>
+                <a class="/terms/terms-of-use">Terms of Use</a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="scripts/theme.js"></script>
+
+</body>
+</html> 

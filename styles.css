@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+@layer reset, theme, utilities;
+
+@import "styles/reset.css" layer(reset);
+@import "styles/theme.css" layer(theme);
+@import "styles/utilities.css" layer(utilities);
+@import "styles/components.css" layer(components);
