@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <style>
-        #hero.background-image {background-image: linear-gradient(light-dark(rgba(var(--light-purple-rgb), var(--opacity-medium)), rgba(var(--dark-purple-rgb), var(--opacity-medium))), light-dark(rgba(var(--light-purple-rgb), var(--opacity-medium)), rgba(var(--dark-purple-rgb), var(--opacity-medium)))), url('images/home-hero-bg.png'); background-position: top center;}
+        #hero.background-image {background-image: linear-gradient(light-dark(rgba(var(--light-purple-rgb), var(--opacity-high)), rgba(var(--dark-purple-rgb), var(--opacity-medium))), light-dark(rgba(var(--light-purple-rgb), var(--opacity-high)), rgba(var(--dark-purple-rgb), var(--opacity-medium)))), url('images/home-hero-bg.png'); background-position: top center;}
     </style>
 </head>
 
@@ -42,7 +42,7 @@
     </header>
     <main>
         <section class="background-image flex-col justify-center align-center" id="hero">
-            <div class="text-center" style="margin-top: 5rem;">
+            <div class="text-center">
                 <h1>Let's Make Something Real</h1>
                 <p>Customize Your Experience: <button id="theme-toggle" class="btn" aria-label="Toggle color theme">🌙</button></p>
             </div>
@@ -50,55 +50,61 @@
         <section class="" id="fueled-by">
             <p>I'm fueled by <span class="fuel">sapphic yearning</span> and <span class="fuel">a good pair of boots</span></p>
         </section>
-        <section class="inner img-module flex-row align-stretch justify-center">
-            <div class="left-img h-100">
-                <img src="images/Alicia-privateer.png" alt="">
-            </div>
+        <section class="inner img-module img-left flex-row align-stretch justify-center">
+            <img class="object-cover" src="images/Alicia-privateer.png" alt="">
             <div class="text-module">
                 <h2>A Requiem for a Life Well Lived</h2>
                 <p>This is where I gather the pieces of a life in motion—the work that shaped me, the choices that rerouted my path, and the tiny triumphs that made the whole thing worthwhile. It’s a tapestry of projects, lessons, detours, and the magic that snuck in between milestones. Think of it as a soft-lit archive of who I’ve been, who I’m becoming, and the footprints I’m leaving behind for anyone who’s wandering their own way through the world.</p>
             </div>
         </section>
-        <section class="inner img-module background-color-main flex-row align-stretch gap-2">
-            <div class="img-right">
-                <img src="/images/blast-icon" alt="">
-            </div>
+        <section class="inner img-module img-right background-color-main flex-row align-stretch justify-center">
+            <img class="dark-icon object-contain" src="images/blast-icon.png" alt="">
+            <img class="light-icon object-contain" src="images/airplane-icon.png" alt="">
             <div class="text-module">
                 <h2>When We Last Left Our Intrepid Adventurer</h2>
-                <p class="now-update">Fill in here</p>
-                <time class="now-update-timestamp">Fill in here</time>
-                <a class="btn btn-main" href="/now" title="">More From the Here and Now</a>
+                <p class="now-update">February 2026</p>
+                <time class="now-update-timestamp">February 2026</time>
+                <p><a class="btn btn-main" href="/now" title="">More From the Here and Now</a></p>
             </div>
         </section>
-        <section class="inner three-across">
+        <section class="inner padded text-center" id="choose-your-path">
             <h2>Choose Your Path</h2>
             <p>This site is a portfolio, a playground, a spellbook. Here’s how to explore.</p>
-
-            <article>
-                <h3>Professional Perspective</h3>
-                <p>Digital experiences crafted with care, clarity, and intention.</p>
-                <a class="btn btn-main" href="/work" title="">See My Work</a>
-            </article>
-            <article>
-                <h3>Digital Garden</h3>
-                <p>Hobbies, tinkering, experiments, myths, vegetables, and other things I'm growing.</p>
-                <a class="btn btn-main" href="/hobbies" title="">Grow with Me</a>
-            </article>
-            <article>
-                <h3>Leather Dispatch</h3>
-                <p>A gated corner for the queer, kinky, and curious.</p>
-                <a class="btn btn-main" href="/dispatch" title="">Enter with Intention</a>
-            </article>
+            <div class="three-across flex-row justify-space-around align-stretch">
+                <article class="background-image flex-col justify-space-between align-center">
+                    <div>
+                        <h3>Professional Perspective</h3>
+                        <p>Digital experiences crafted with care, clarity, and intention.</p>
+                    </div>
+                    <a class="btn btn-main" href="/work" title="">See My Work</a>
+                </article>
+                <article class="background-image flex-col justify-space-between align-center">
+                    <div>
+                        <h3>Digital Garden</h3>
+                        <p>Hobbies, tinkering, experiments, myths, vegetables, and other things I'm growing.</p>
+                    </div>
+                    <a class="btn btn-main" href="/hobbies" title="">Grow with Me</a>
+                </article>
+                <article class="background-image flex-col justify-space-between align-center">
+                    <div>
+                        <h3>Leather Dispatch</h3>
+                        <p>A gated corner for the queer, kinky, and curious.</p>
+                    </div>
+                    <a class="btn btn-main" href="/dispatch" title="">Enter with Intention</a>
+                </article>
+            </div>
         </section>
     </main>
     <footer>
-        <div class="inner">
+        <div id="footer-bg-img" class="background-image">&nbsp;</div>
+        <div id="footer-bg">        
+        <div class="inner flex-row justify-center align-start">
         <section id="footer-left">
             <h2>Who Is Alicia Secord?</h2>
-            <p>Dreamer. Forever mapping uncharted futures and making little rituals out of possibility.</p>
-            <p>Adventurer. Wandering through tech, magic, and real life with   equal parts courage and curiosity.</p>
-            <p>Artist. Building worlds—digital, domestic, and mythic—one intuitive brushstroke at a time.</p>
-            <p>Fool. Delighted to learn by doing, messing up, trying again, and finding wonder in the chaos.</p>
+            <p><mark class="bold">Dreamer.</mark> Forever mapping uncharted futures and making little rituals out of possibility.</p>
+            <p><mark class="bold">Adventurer.</mark> Wandering through tech, magic, and real life with   equal parts courage and curiosity.</p>
+            <p><mark class="bold">Artist.</mark> Building worlds—digital, domestic, and mythic—one intuitive brushstroke at a time.</p>
+            <p><mark class="bold">Fool.</mark> Delighted to learn by doing, messing up, trying again, and finding wonder in the chaos.</p>
         </section>
         <section id="footer-nav" class="flex-col">
             <a href="/">Home</a>
@@ -113,7 +119,8 @@
             <a href="/contact">Contact</a>
         </section>
         </div>
-        <section id="footer-copyright">
+        </div>
+        <section id="footer-copyright" class="text-center">
             <h2>Copyright 2026. Alicia Secord. All Rights Reserved.</h2>
             <div class="flex-row justify-center" id="footer-terms">
                 <a class="/terms/privacy-policy">Privacy Policy</a>

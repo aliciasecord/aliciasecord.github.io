@@ -12,13 +12,13 @@
     --light-pink-rgb: 240, 188, 198;
     --light-purple: #e1d8ee;
     --light-purple-rgb: 225, 216, 238;
-    --light-yellow: #f4eea9;
-    --light-yellow-rgb: 244, 238, 169;
+    --light-yellow: #FEE2AF;
+    --light-yellow-rgb: 254, 226, 175;
     /* dark is for dark-mode */
-    --dark-pink: #861d31;
-    --dark-pink-rgb: 134, 29, 49;
-    --dark-purple: #301b4b;
-    --dark-purple-rgb: 48, 27, 75;
+    --dark-pink: #320B12;
+    --dark-pink-rgb: 50, 11, 18;
+    --dark-purple: #1a102b;
+    --dark-purple-rgb: 26, 16, 43;
     --dark-yellow: #fbad1a;
     --dark-yellow-rgb: 251, 173, 26;
 
@@ -33,8 +33,10 @@
     /* accent colors are two purples that can be used for texture
         midnight for dark-mode
         pastel for light-mode */
-    --midnight: #1a102b; 
-    --midnight-rgb: 26, 16, 43;
+    --midnight: #301b4b; 
+    --midnight-rgb: 48, 27, 75;
+    --red: #972137;
+    --red-rgb: 151, 33, 55;
     --pastel: #c6b4e4;
     --pastel-rgb: 198, 180, 228;
 
@@ -52,8 +54,11 @@
 
 }
 
+html[data-theme="light"] {color-scheme: light;}
+html[data-theme="dark"] {color-scheme: dark;}
 body {font-family: var(--sans); background-color: light-dark(var(--white), var(--dark-purple)); color: light-dark(var(--black), var(--white));}
 h1, h2, h3, h4 {font-family: var(--display); color: light-dark(var(--black), var(--dark-yellow));}
 p, a {font-family: var(--serif); color: light-dark(var(--black), var(--white)); line-height: 1.6;}
 time, small {font-family: var(--sans); text-transform: uppercase; color: light-dark(var(--dark-yellow), var(--light-yellow));}
 span {color: light-dark(var(--black), var(--dark-yellow));}
+mark {background-color: transparent; color: light-dark(var(--midnight), var(--light-yellow)); font-weight: 700;}

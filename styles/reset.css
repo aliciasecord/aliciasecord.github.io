@@ -6,7 +6,7 @@ html[data-theme="dark"] {color-scheme: dark;}
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; font-size: 1rem; line-height: 1.5;} 
 header, main, footer, article, section {display: block;}
 input, textarea, select, button { font-family: inherit; font-size: inherit; border: none; outline: none; }
-a { text-decoration: none; color: inherit; }
+a { text-decoration: none; color: inherit; cursor: pointer;}
 button { cursor: pointer; } 
 p, a, span { margin: 0; padding: 0; font-size: 1rem; font-weight: 400;}
 button {display: inline-block; background: none; border: none; padding: 0; margin: 0; font-size: 1rem; font-weight: 600; color: inherit;}
@@ -18,3 +18,4 @@ h3 {font-size: 1.5rem;font-weight: 300;}
 h4 {font-size: 1.25rem;font-weight: 700;}
 h5 {font-size: 1rem; font-weight: 700;}
 h6 {font-size: 1rem; font-weight: 400;}
+mark {background: none; padding: 0; margin: 0;}
