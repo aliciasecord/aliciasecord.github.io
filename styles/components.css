@@ -121,7 +121,7 @@ html[data-theme="dark"] #footer-bg-img {background-image: url('../images/dark-fo
         button#nav-toggle { display: inline; margin: 0 var(--margin-default); padding: var(--padding-tight) var(--padding-default); border-radius: 0; }
         button#nav-toggle:hover, #nav-toggle.active {background-color: var(--color-interactive-primary); color: var(--color-text-headings);}
 
-        .img-module:is(.img-left, .img-right), .three-across {flex-direction: column;}
+        .img-module.img-left, .img-module.img-right, .three-across {flex-direction: column;}
         .img-module.inner {padding: 0;}
         .img-module :is(div, img), .three-across :is(article) {
         width: 100%;}
