@@ -21,17 +21,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <style>
-        #hero.background-image {background-image: linear-gradient(light-dark(rgba(var(--light-purple-rgb), var(--opacity-high)), rgba(var(--dark-purple-rgb), var(--opacity-medium))), light-dark(rgba(var(--light-purple-rgb), var(--opacity-high)), rgba(var(--dark-purple-rgb), var(--opacity-medium)))), url('images/home-hero-bg.png'); background-position: top center;}
-    </style>
 </head>
 
 <body>
     <header>
-        <div class="inner flex-row align-center justify-space-between">
-            <p>Alicia Secord</p>
-            <nav>
+        <div class="inner">
+            <p>Alicia Secord <button id="nav-toggle">☰</button></p>
+            <nav id="nav-main">
                 <a href="/">Home</a>
                 <a href="/about">About</a>
                 <a href="/resume">Resume</a>
@@ -41,37 +37,35 @@
         </div>
     </header>
     <main>
-        <section class="background-image flex-col justify-center align-center" id="hero">
-            <div class="text-center">
-                <h1>Let's Make Something Real</h1>
-                <p>Customize Your Experience: <button id="theme-toggle" class="btn" aria-label="Toggle color theme">🌙</button></p>
-            </div>
+        <section class="background-image hero" id="home-hero">
+            <h1>Let's Make Something Real</h1>
+            <p>Customize Your Experience: <button id="theme-toggle" class="btn btn-main" aria-label="Toggle color theme">🌙</button></p>
         </section>
         <section class="" id="fueled-by">
             <p>I'm fueled by <span class="fuel">sapphic yearning</span> and <span class="fuel">a good pair of boots</span></p>
         </section>
-        <section class="inner img-module img-left flex-row align-stretch justify-center">
+        <section class="inner img-module img-left">
             <img class="object-cover" src="images/Alicia-privateer.png" alt="">
-            <div class="text-module">
+            <div class="text-col">
                 <h2>A Requiem for a Life Well Lived</h2>
                 <p>This is where I gather the pieces of a life in motion—the work that shaped me, the choices that rerouted my path, and the tiny triumphs that made the whole thing worthwhile. It’s a tapestry of projects, lessons, detours, and the magic that snuck in between milestones. Think of it as a soft-lit archive of who I’ve been, who I’m becoming, and the footprints I’m leaving behind for anyone who’s wandering their own way through the world.</p>
             </div>
         </section>
-        <section class="inner img-module img-right background-color-main flex-row align-stretch justify-center">
+        <section class="inner img-module img-right bg-secondary">
             <img class="dark-icon object-contain" src="images/blast-icon.png" alt="">
             <img class="light-icon object-contain" src="images/airplane-icon.png" alt="">
-            <div class="text-module">
+            <div class="text-col">
                 <h2>When We Last Left Our Intrepid Adventurer</h2>
-                <p class="now-update">February 2026</p>
-                <time class="now-update-timestamp">February 2026</time>
+                <p id="now-update">February 2026</p>
+                <time id="now-update-timestamp">February 2026</time>
                 <p><a class="btn btn-main" href="/now" title="">More From the Here and Now</a></p>
             </div>
         </section>
         <section class="inner padded text-center" id="choose-your-path">
             <h2>Choose Your Path</h2>
             <p>This site is a portfolio, a playground, a spellbook. Here’s how to explore.</p>
-            <div class="three-across flex-row justify-space-around align-stretch">
-                <article class="background-image flex-col justify-space-between align-center">
+            <div class="three-across">
+                <article class="background-image">
                     <div>
                         <h3>Professional Perspective</h3>
                         <p>Digital experiences crafted with care, clarity, and intention.</p>

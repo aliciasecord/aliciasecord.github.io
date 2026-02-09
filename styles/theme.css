@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 :root {
+    /* ---------- 
+    RAW TOKENS
+    ---------- */
+
     /* FONTS */
     --display: 'IM Fell DW Pica', Georgia, serif;
     --sans: 'Noto Sans', Arial, Helvetica, sans-serif;
@@ -52,13 +56,73 @@
     --spacing-lg: 3rem;
     --spacing-xl: 4rem;
 
+    /* FONT WEIGHTS */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+
+    /* ---------- 
+    SEMANTIC TOKENS
+    ---------- */
+
+    /* GAP UTILITIES */
+    --layout-gap-tight: var(--spacing-xs);
+    --layout-gap-default: var(--spacing-md);
+    --layout-gap-loose: var(--spacing-xl);
+
+    /* BORDER RADIUS */
+    --border-radius-tight: var(--spacing-xs);
+    --border-radius-default: var(--spacing-sm);
+    --border-radius-lg: var(--spacing-xl);
+
+    /* CONTENT WIDTH */
+    --max-content-width: 1500px;
+    --min-content-width: 300px;
+
+    /* PADDING */
+    --padding-tight: var(--spacing-xs);
+    --padding-default: var(--spacing-md);
+    --padding-loose: var(--spacing-xl);
+
+    /* MARGIN */
+    --margin-tight: var(--spacing-xs);
+    --margin-default: var(--spacing-md);
+    --margin-loose: var(--spacing-xl);
+
+    /* SECTION SPACING */
+    --section-spacing: var(--spacing-lg);
+
+    /* COLORS */
+    /* Text */
+    --color-text-primary: light-dark(var(--black), var(--white));
+    --color-text-headings: light-dark(var(--black), var(--dark-yellow));
+    --color-text-secondary: light-dark(var(--dark-yellow), var(--light-yellow));
+
+    --color-text-accent: light-dark(var(--dark-yellow), var(--light-yellow));
+
+    /* Surfaces */
+    --color-surface-primary: light-dark(var(--white), var(--dark-purple));
+    --color-surface-secondary: light-dark(var(--light-purple), var(--midnight));
+    --color-surface-accent: light-dark(var(--light-pink), var(--dark-pink));
+
+    /* Interactive */
+    --color-interactive-primary: light-dark(var(--pastel), var(--dark-purple));
+    --color-interactive-hover: light-dark(var(--light-pink), var(--red));
+
+    /* FONTS */
+    --font-headings: var(--display);
+    --font-interactive: var(--sans);
+    --font-body: var(--serif);
 }
 
 html[data-theme="light"] {color-scheme: light;}
 html[data-theme="dark"] {color-scheme: dark;}
 body {font-family: var(--sans); background-color: light-dark(var(--white), var(--dark-purple)); color: light-dark(var(--black), var(--white));}
-h1, h2, h3, h4 {font-family: var(--display); color: light-dark(var(--black), var(--dark-yellow));}
-p, a {font-family: var(--serif); color: light-dark(var(--black), var(--white)); line-height: 1.6;}
-time, small {font-family: var(--sans); text-transform: uppercase; color: light-dark(var(--dark-yellow), var(--light-yellow));}
-span {color: light-dark(var(--black), var(--dark-yellow));}
-mark {background-color: transparent; color: light-dark(var(--midnight), var(--light-yellow)); font-weight: 700;}
+h1, h2, h3, h4 {font-family: var(--font-headings); color: var(--color-text-headings)}
+p, small {font-family: var(--font-body); color: var(--color-text-primary); line-height: 1.7;}
+a, time {font-family: var(--font-interactive); text-transform: uppercase; color: var(--color-accent);}
+span {color: var(--color-text-headings);}
+mark {background-color: transparent; color: var(--color-text-secondary); font-weight: 700;}
+section {padding: var(--section-spacing) 0;}

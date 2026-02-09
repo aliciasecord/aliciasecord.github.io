@@ -1,15 +1,10 @@
 @charset "UTF-8";
 
-/* UTILITIES LAYER
-    This layer contains utility classes that can be used throughout the site for specific styling needs. 
-    These classes are designed to be reusable and can be applied to any element to achieve a desired effect. 
-    Examples include text alignment, margin and padding adjustments, display properties, and more. 
-    The utilities in this layer are meant to complement the base styles defined in the reset and theme layers, providing additional flexibility for layout and design. 
-*/
-
 /* Flexbox utilities */
-.flex-row { display: flex; flex-direction: row; gap: var(--spacing-md); }
-.flex-col { display: flex; flex-direction: column; gap: var(--spacing-md); }
+.flex-row, .mobile-flex-row { display: flex; flex-direction: row;}
+.flex-row-reverse { display: flex; flex-direction: row-reverse;}
+.flex-col { display: flex; flex-direction: column;}
+.flex-row, .flex-col { gap: var(--layout-gap-default);}
 .align-center { align-items: center; }
 .align-stretch { align-items: stretch; }
 .align-start { align-items: flex-start; }
@@ -20,8 +15,11 @@
 .justify-space-between { justify-content: space-between; }
 .justify-space-around { justify-content: space-around; }
 
+/* Size utilities */
 .w-100 { width: 100%; }
 .h-100 { height: 100%; }
+.inner {max-width: var(--max-content-width); width: 100%; margin: 0 auto; padding: 0 var(--padding-default);}
+.inner.padded {padding: var(--padding-default);}
 
 /* Text utilities */
 .text-center { text-align: center; }
@@ -32,8 +30,6 @@
 /* Image utilities */
 .object-cover { object-fit: cover; }
 .object-contain { object-fit: contain; }
-.img-left img { order: -1; }
-.img-right img { order: 1; }
 
 .light-icon, .dark-icon {display: none;}
 html[data-theme="light"] .light-icon {display: block;}
@@ -41,13 +37,18 @@ html[data-theme="dark"] .dark-icon {display: block;}
 
 .background-image {background-size: cover; background-position: center; background-repeat: no-repeat; }
 
-/* Button utilities */
-.btn {display: inline-block; padding: var(--spacing-xs) var(--spacing-md); margin: 0 var(--spacing-sm); font-size: 1rem; font-weight: 600; border-radius: var(--spacing-md); background-color: light-dark(var(--light-pink), var(--dark-purple)); color: light-dark(var(--black), var(--dark-yellow)); text-align: center; transition: background-color 0.3s ease; text-decoration: none;}
-.btn:hover {background-color: light-dark(var(--pastel), var(--dark-pink)); color: light-dark(var(--black), var(--dark-yellow));}
+/* Color utilities */
+.text-primary   { color: var(--color-text-primary); }
+.text-headings  { color: var(--color-text-headings); }    
+.text-secondary { color: var(--color-text-secondary); }
+.text-accent    { color: var(--color-text-accent); }
+
+.bg-primary     { background-color: var(--color-surface-primary); }
+.bg-secondary   { background-color: var(--color-surface-secondary);}
+.bg-accent      { background-color: var(--color-surface-accent); }
 
 /* Responsive utilities */
-
-@media (max-width: 600px) {
+@media (max-width: 850px) {
     .flex-row { flex-direction: column; }
-    .img-left, .img-right { order: 0; margin: 0; }
+    .mobile-hide {display: none;}
 }
