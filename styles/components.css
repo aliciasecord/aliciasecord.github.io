@@ -14,7 +14,7 @@
    NAV
    ====================== */
 
-    nav {flex-direction: row; gap: var(--layout-gap-tight); overflow: none;}
+    nav {display: flex; flex-direction: row; align-content: center; justify-content: flex-end; gap: var(--layout-gap-tight); overflow: none;}
     nav a {font-family: var(--font-interactive); color: var(--color-text-primary); text-decoration: none; padding: var(--padding-tight); transition: background-color 0.25s ease;}
     nav a:hover {background-color: var(--color-interactive-primary); color: var(--color-text-primary);}
     button#nav-toggle {display: none; font-size: 1.5rem;cursor: pointer;}
@@ -115,9 +115,10 @@ html[data-theme="dark"] #footer-bg-img {background-image: url('../images/dark-fo
    ====================== */
 
     @media (max-width: 850px) {
+        header .inner {flex-direction: column;}
         header p {width: 100%;}
 
-        nav {display: flex; flex-direction: column; align-items: center; gap: var(--spacing-tight);}
+        nav {display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: var(--spacing-tight);}
         button#nav-toggle { display: inline; margin: 0 var(--margin-default); padding: var(--padding-tight) var(--padding-default); border-radius: 0; }
         button#nav-toggle:hover, #nav-toggle.active {background-color: var(--color-interactive-primary); color: var(--color-text-headings);}
 
