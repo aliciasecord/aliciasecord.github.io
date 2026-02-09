@@ -31,7 +31,7 @@
 .object-cover { object-fit: cover; }
 .object-contain { object-fit: contain; }
 
-.light-icon, .dark-icon {display: none;}
+.light-icon, .dark-icon {display: none; padding: var(--padding-loose);}
 html[data-theme="light"] .light-icon {display: block;}
 html[data-theme="dark"] .dark-icon {display: block;}
 
