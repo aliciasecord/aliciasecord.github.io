@@ -50,5 +50,4 @@ html[data-theme="dark"] .dark-icon {display: block;}
 /* Responsive utilities */
 @media (max-width: 850px) {
     .flex-row { flex-direction: column; }
-    .mobile-hide {display: none;}
 }
