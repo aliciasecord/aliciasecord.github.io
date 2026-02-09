@@ -8,16 +8,19 @@
 
     header .inner {display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 0 var(--padding-default); margin: 0 auto;}
 
-    header p {font-family: var(--font-headings); font-size: 1.5rem; text-transform: uppercase; margin: 0; padding: 0; display: flex; flex-direction: row; align-items: center; justify-content: space-between;}
+    header #header-label {display: flex; flex-direction: row; align-items: center; justify-content: space-between; width: 100%;}
+
+    header p {font-family: var(--font-headings); font-size: 1.5rem; text-transform: uppercase; margin: 0; padding: 0; }
 
 /* ======================
    NAV
    ====================== */
 
-    nav {display: flex; flex-direction: row; align-content: center; justify-content: flex-end; gap: var(--layout-gap-tight); overflow: none;}
+    nav {display: flex; flex-direction: row; align-content: center; justify-content: flex-end; gap: var(--layout-gap-tight); overflow: none; width: 100%;}
     nav a {font-family: var(--font-interactive); color: var(--color-text-primary); text-decoration: none; padding: var(--padding-tight); transition: background-color 0.25s ease;}
     nav a:hover {background-color: var(--color-interactive-primary); color: var(--color-text-primary);}
-    button#nav-toggle {display: none; font-size: 1.5rem;cursor: pointer;}
+    button#nav-toggle {display: none; font-size: 1.5rem;cursor: pointer; margin: 0; padding: var(--padding-tight) var(--padding-default); background: none; border: none; color: var(--color-text-primary);}
+    button#nav-toggle:hover, button#nav-toggle.active {background-color: var(--color-interactive-primary); color: var(--color-text-headings);}
 
 /* ======================
    MAIN
@@ -57,58 +60,25 @@
 /* ======================
    FOOTER
    ====================== */
+    html[data-theme="light"] #footer-bg-img {background-image: url('../images/light-footer-bg.png');}
+    html[data-theme="dark"] #footer-bg-img {background-image: url('../images/dark-footer-bg.png');}
+    #footer-bg-img {height: 90vh; position: relative; z-index: -1; top: -40vh;margin: 0 0 -40vh; background-position: top center; background-size: cover; background-repeat: no-repeat;}
+    #footer-bg {background-color: var(--color-surface-footer); position: relative; z-index: 0; padding: var(--padding-loose) 0; margin: 0;}
 
-#footer-bg-img {
-    height: 90vh;
-    position: relative;
-    z-index: -1;
-    top: -40vh;
-    margin: 0 0 -40vh;
-    background-position: top center;
-}
-#footer-bg {
-    background-color: light-dark(var(--pastel), var(--dark-purple));
-    padding: var(--spacing-lg) 0;
-}
-#footer-left {
-    width: 40%;
-}
+    footer .inner {display: flex; flex-direction: row; align-items: center; justify-content: center; gap: var(--layout-gap-default); padding: 0 var(--padding-default); margin: 0;}
 
-#footer-nav {
-    width: 30%;
-    padding: var(--spacing-md);
-    gap: 0;
-}
+    #footer-left {padding: 0; color: var(--color-text-primary); min-width: 240px; width: 40%;}
+    footer mark {color: light-dark(var(--midnight), var(--light-yellow)); text-transform: uppercase;}
 
-footer a {
-    font-family: var(--sans);
-    display: block;
-    color: light-dark(var(--mignight), var(--pastel));
-    text-decoration: none;
-    margin: 0;
-}
-footer a:hover {
-    color: light-dark(var(--red), var(--light-pink));
-}
-#footer-nav .footer-subnav a {
-    margin: 0 var(--spacing-sm);
-}
+    footer a {font-family: var(--font-interactive); display: block; color: var(--color-interactive-footer); margin: 0; font-weight: var(--font-weight-bold);}
+    footer a:hover {color: var(--color-interactive-hover-footer);}
 
-#footer-copyright {
-    background-color: light-dark(var(--light-pink), var(--dark-pink));
-    padding: var(--spacing-sm) var(--spacing-md);
-    color: light-dark(var(--black), var(--white));
-}
-#footer-copyright h2 {
-    font-family: var(--sans);
-    font-size: 1rem;
-    margin: 0;}
-#footer-copyright a {
-    display: inline-block;
-}
+    footer #footer-nav {display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: var(--layout-gap-tight); padding: var(--padding-tight);}
+    footer #footer-nav .footer-subnav a { margin: 0 var(--margin-default);}
 
-html[data-theme="light"] #footer-bg-img {background-image: url('../images/light-footer-bg.png');}
-html[data-theme="dark"] #footer-bg-img {background-image: url('../images/dark-footer-bg.png');}
+    #footer-copyright {text-align: center; background-color: var(--color-surface-accent); padding: var(--padding-tight) var(--padding-default); margin: 0; color: var(--color-text-primary);}
+    #footer-copyright h2 { font-family: var(--font-interactive); font-size: 1rem; margin: 0;}
+    #footer-copyright a {display: inline-block;}
 
 /* ======================
    RESPONSIVE OVERRIDES
@@ -118,10 +88,9 @@ html[data-theme="dark"] #footer-bg-img {background-image: url('../images/dark-fo
         header .inner {flex-direction: column;}
         header p {width: 100%;}
 
-        nav {display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: var(--spacing-tight);}
-        button#nav-toggle { display: inline; margin: 0 var(--margin-default); padding: var(--padding-tight) var(--padding-default); border-radius: 0; }
-        button#nav-toggle:hover, #nav-toggle.active {background-color: var(--color-interactive-primary); color: var(--color-text-headings);}
-        nav a {padding: var(--padding-tight) var(--padding-default); width: 100%; text-align: center;}
+        nav {flex-direction: column; align-items: center; justify-content: flex-start; gap: var(--spacing-tight);}
+        button#nav-toggle { display: inline;}
+        nav a {padding: var(--padding-tight); width: 100%; text-align: center;}
 
         .img-module.img-left, .img-module.img-right {flex-direction: column-reverse;}
         .img-module.inner {padding: 0;}
@@ -130,6 +99,10 @@ html[data-theme="dark"] #footer-bg-img {background-image: url('../images/dark-fo
         .three-across {flex-direction: column; padding: 0 var(--padding-default);}
         .three-across :is(article) {width: 100%; margin: var(--margin-default) 0;}
         
+        #footer-bg-img {height: 50vh; top: -30vh; margin: 0 0 -30vh;}
+        footer .inner {flex-direction: column-reverse; gap: var(--spacing-loose); position: relative;}
+        footer #footer-nav, footer #footer-terms {flex-direction: row; flex-wrap: wrap; justify-content: center; margin: 0 0 var(--margin-default); }
+        footer #footer-nav .footer-subnav {display: none;}
         #footer-left, #footer-nav {width: 100%;}
         .mobile-hide {display: none;}
     }

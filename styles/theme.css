@@ -99,17 +99,19 @@
     --color-text-primary: light-dark(var(--black), var(--white));
     --color-text-headings: light-dark(var(--black), var(--dark-yellow));
     --color-text-secondary: light-dark(var(--dark-yellow), var(--light-yellow));
-
     --color-text-accent: light-dark(var(--dark-yellow), var(--light-yellow));
 
     /* Surfaces */
     --color-surface-primary: light-dark(var(--white), var(--dark-purple));
     --color-surface-secondary: light-dark(var(--light-purple), var(--midnight));
     --color-surface-accent: light-dark(var(--light-pink), var(--dark-pink));
+    --color-surface-footer: light-dark(var(--pastel), var(--midnight));
 
     /* Interactive */
     --color-interactive-primary: light-dark(var(--pastel), var(--dark-purple));
     --color-interactive-hover: light-dark(var(--light-pink), var(--red));
+    --color-interactive-footer: light-dark(var(--midnight), var(--pastel));
+    --color-interactive-hover-footer: light-dark(var(--red), var(--light-pink));
 
     /* FONTS */
     --font-headings: var(--display);
