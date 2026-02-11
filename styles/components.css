@@ -87,7 +87,7 @@
 
     #footer-copyright {text-align: center; background-color: var(--color-surface-accent); padding: var(--padding-tight) var(--padding-default); margin: 0; color: var(--color-text-primary);}
     #footer-copyright h2 { font-family: var(--font-interactive); font-size: 1rem; margin: 0;}
-    #footer-copyright a {display: inline-block;}
+    #footer-copyright a {display: inline-block; margin: var(--margin-default) 0 var(--margin-tight);}
 
 /* ======================
    RESPONSIVE OVERRIDES
@@ -102,17 +102,18 @@
         nav a {padding: var(--padding-tight); width: 100%; text-align: center;}
 
         #fueled-by span {display: block;}
+        #fueled-by span:not(.fuel) {margin: 0;}
 
         .img-module.img-left, .img-module.img-right {flex-direction: column-reverse;}
         .img-module.inner {padding: 0;}
         .img-module :is(div, img) {width: 100%;}
 
-        .three-across {flex-direction: column; padding: 0 var(--padding-default);}
+        .three-across {flex-direction: column;}
         .three-across :is(article) {width: 100%; margin: var(--margin-default) 0;}
         
         #footer-bg-img {height: 50vh; top: -30vh; margin: 0 0 -30vh;}
         footer .inner {flex-direction: column-reverse; gap: var(--spacing-loose); position: relative;}
-        footer #footer-nav, footer #footer-terms {flex-direction: row; flex-wrap: wrap; justify-content: center; margin: 0 0 var(--margin-default); }
+        footer #footer-nav, footer #footer-terms {flex-direction: row; align-items: center; justify-content: center; margin: 0 0 var(--margin-default); }
         footer #footer-nav .footer-subnav {display: none;}
         #footer-left, #footer-nav {width: 100%;}
         .mobile-hide {display: none;}
