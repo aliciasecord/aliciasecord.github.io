@@ -105,10 +105,11 @@
     --color-surface-primary: light-dark(var(--white), var(--dark-purple));
     --color-surface-secondary: light-dark(var(--light-purple), var(--midnight));
     --color-surface-accent: light-dark(var(--light-pink), var(--dark-pink));
-    --color-surface-footer: light-dark(var(--pastel), var(--midnight));
+    --color-surface-footer: light-dark(var(--pastel), var(--dark-purple));
 
     /* Interactive */
-    --color-interactive-primary: light-dark(var(--pastel), var(--dark-purple));
+    --color-interactive-primary: light-dark(var(--pastel), var(--midnight));
+    --color-interactive-secondary: light-dark(var(--light-purple), var(--dark-purple));
     --color-interactive-hover: light-dark(var(--light-pink), var(--red));
     --color-interactive-footer: light-dark(var(--midnight), var(--pastel));
     --color-interactive-hover-footer: light-dark(var(--red), var(--light-pink));

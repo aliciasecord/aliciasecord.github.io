@@ -5,11 +5,8 @@
    ====================== */
 
     header {background-color: var(--color-surface-accent); color: var(--color-text-primary); position: fixed; top: 0; left: 0; width: 100%;z-index: 1000; box-shadow: 0 4px 8px rgba(var(--black), var(--opacity-low));}
-
-    header .inner {display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 0 var(--padding-default); margin: 0 auto;}
-
+    header .inner {display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 0 var(--padding-default); margin: 0 auto; max-width: var(--max-content-width);}
     header #header-label {display: flex; flex-direction: row; align-items: center; justify-content: space-between; width: 100%;}
-
     header p {font-family: var(--font-headings); font-size: 1.5rem; text-transform: uppercase; margin: 0; padding: 0; }
 
 /* ======================
@@ -40,13 +37,15 @@
     .img-module .text-col {padding: var(--padding-default);}
 
     /* Three Across Module */
-    .three-across {display: flex; flex-direction: row; justify-content: space-around; align-items: stretch; margin: var(--margin-tight) 0;}
-    .three-across article {display: flex; flex-direction: column;  justify-content: space-between; align-items: center; padding: var(--padding-default); margin: 0 var(--margin-default); border-radius: var(--border-radius-default); background-color: var(--color-surface-secondary);  color: var(--color-text-primary); width: 30%; }
+    .three-across {display: flex; flex-direction: row; justify-content: space-between; align-items: stretch; margin: var(--margin-tight) 0;}
+    .three-across article {display: flex; flex-direction: column;  justify-content: space-between; align-items: center; padding: var(--padding-default); margin: 0; border-radius: var(--border-radius-default); background-color: var(--color-surface-secondary);  color: var(--color-text-primary); width: 30%; }
+    .three-across article .btn {margin: var(--margin-default) 0 0 0;}
 
     /* Buttons */
     .btn {display: inline-block; padding: var(--padding-tight) var(--padding-default); margin: 0 var(--margin-default); font-size: 1rem; font-weight: var(--font-weight-bold); border-radius: var(--border-radius-default); text-align: center; transition: background-color 0.3s ease; text-decoration: none; font-size: 0.75rem; text-transform: uppercase; font-family: var(--font-interactive);}
     .btn.btn-main {background-color: var(--color-interactive-primary); color: var(--color-text-headings);}
     .btn.btn-main:hover {background-color: var(--color-interactive-hover); color: var(--color-text-headings);}
+    .btn.btn-secondary {background-color: var(--color-interactive-secondary); color: var(--color-text-headings);}
 
     /* HOME: Hero */
     #home-hero h1 {margin-top: 6rem;}
@@ -55,7 +54,17 @@
     /* HOME: Fueled By */
     #fueled-by {padding: var(--padding-tight) var(--padding-default); text-align: center; background-color: var(--color-surface-accent);  position: relative; z-index: 500; margin: 0;}
 
-    #fueled-by .fuel {background-color: light-dark(var(--light-yellow), var(--dark-purple)); color: var(--color-text-headings); rotate: -5deg; display: inline-block; padding: var(--padding-tight) var(--padding-default) var(--spacing-sm); margin: var(--margin-tight); border-radius: var(--border-radius-lg); min-width: 15rem; font-weight: var(--font-weight-bold);}
+    #fueled-by span:not(.fuel) {font-family: var(--font-body); color: var(--color-text-primary); font-size: 1.25rem; margin: 0 0 var(--margin-default) 0;}
+
+    #fueled-by .fuel {background-color: light-dark(var(--light-yellow), var(--dark-purple)); color: var(--color-text-headings); rotate: -5deg; display: inline-block; padding: var(--padding-tight) var(--padding-default); margin: var(--margin-tight); border-radius: var(--border-radius-lg); min-width: 18rem; font-weight: var(--font-weight-bold);}
+
+    /* HOME: Choose Your Path */
+    #choose-your-path h2 + p {margin: 0 0 var(--margin-default) 0;}
+
+    /* HOME: Three Across */
+    #home-professional {background-image: linear-gradient(light-dark(rgba(var(--light-purple-rgb), 0.75), rgba(var(--dark-purple-rgb), 0.75)), light-dark(rgba(var(--light-purple-rgb), 0.75), rgba(var(--dark-purple-rgb), 0.75))), url('../images/home-professional-bg.png');}
+    #home-personal {background-image: linear-gradient(light-dark(rgba(var(--light-purple-rgb), 0.75), rgba(var(--dark-purple-rgb), 0.75)), light-dark(rgba(var(--light-purple-rgb), 0.75), rgba(var(--dark-purple-rgb), 0.75))),url('../images/home-personal-bg.png');}
+    #home-leather {background-image: linear-gradient(light-dark(rgba(var(--light-purple-rgb), 0.75), rgba(var(--dark-purple-rgb), 0.75)), light-dark(rgba(var(--light-purple-rgb), 0.75), rgba(var(--dark-purple-rgb), 0.75))),url('../images/home-leather-bg.jpg'); background-size: cover; background-position: center;}
 
 /* ======================
    FOOTER
@@ -91,6 +100,8 @@
         nav {flex-direction: column; align-items: center; justify-content: flex-start; gap: var(--spacing-tight);}
         button#nav-toggle { display: inline;}
         nav a {padding: var(--padding-tight); width: 100%; text-align: center;}
+
+        #fueled-by span {display: block;}
 
         .img-module.img-left, .img-module.img-right {flex-direction: column-reverse;}
         .img-module.inner {padding: 0;}
