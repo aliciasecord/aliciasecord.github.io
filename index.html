@@ -15,6 +15,8 @@
     <meta property="og:description" content="The personal website of Alicia Secord, frontend developer and designer." />
     <meta property="og:image" content="" />
 
+    <link rel="icon" type="images/x-icon" href="images/favicon.ico">
+
     <link rel="canonical" href="https://aliciasecord.com">
     <link rel="stylesheet" href="styles.css"> 
 
@@ -24,6 +26,9 @@
 </head>
 
 <body>
+    <!-- ======================
+     GLOBAL HEADER
+     ====================== -->
     <header>
         <div class="inner">
             <div id="header-label"><p>Alicia Secord</p> <button id="nav-toggle">☰</button></div>
@@ -36,25 +41,27 @@
             </nav>
         </div>
     </header>
+    <!-- ======================
+     PAGE MAIN
+     ====================== -->
     <main>
         <section class="background-image hero" id="home-hero">
             <h1>Let's Make Something Real</h1>
-            <p>Customize Your Experience: <button id="theme-toggle" class="btn btn-main" aria-label="Toggle color theme">🌙</button></p>
+            <div><p>Customize Your Experience:</p> <button id="theme-toggle" class="btn btn-main" aria-label="Toggle color theme">🌙</button></div>
         </section>
         <section id="fueled-by">
             <p><span>I'm fueled by</span> <span class="fuel">sapphic yearning</span> <span>and</span> <span class="fuel">a good pair of boots</span></p>
         </section>
         <section class="inner img-module img-left">
-            <img class="object-cover" src="images/Alicia-privateer.png" alt="">
+            <img class="object-cover" src="images/Alicia-privateer.webp" alt="">
             <div class="text-col">
                 <h2>A Requiem for a Life Well Lived</h2>
                 <p>This is where I gather the pieces of a life in motion—the work that shaped me, the choices that rerouted my path, and the tiny triumphs that made the whole thing worthwhile. It's a tapestry of projects, lessons, detours, and the magic that snuck in between milestones. Think of it as a soft-lit archive of who I've been, who I'm becoming, and the footprints I'm leaving behind for anyone who's wandering their own way through the world.</p>
-                <p><a class="btn btn-main" href="https://open.spotify.com/playlist/2QHJ5H9ys5zM08G89kpb28?si=c8ddce1062444d40" title="Spotify link">Getting to Know Me playlist on Spotify</a></p>
             </div>
         </section>
         <section class="inner img-module img-right bg-secondary">
-            <img class="dark-icon object-contain" src="images/blast-icon.png" alt="">
-            <img class="light-icon object-contain" src="images/airplane-icon.png" alt="">
+            <img class="dark-icon object-contain" src="images/blast-icon.webp" alt="">
+            <img class="light-icon object-contain" src="images/airplane-icon.webp" alt="">
             <div class="text-col">
                 <h2>When We Last Left Our Intrepid Adventurer</h2>
                 <p id="now-update">Insert Here</p>
@@ -90,6 +97,9 @@
             </div>
         </section>
     </main>
+    <!-- ======================
+     GLOBAL FOOTER
+     ====================== -->
     <footer>
         <div id="footer-bg-img">&nbsp;</div>
         <div id="footer-bg">        
