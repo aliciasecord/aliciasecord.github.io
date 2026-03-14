@@ -65,7 +65,7 @@
     /* HOME: Three Across */
     #home-professional {background-image: linear-gradient(light-dark(rgba(var(--light-purple-rgb), 0.75), rgba(var(--dark-purple-rgb), 0.75)), light-dark(rgba(var(--light-purple-rgb), 0.75), rgba(var(--dark-purple-rgb), 0.75))), url('../images/home-professional-bg.webp');}
     #home-personal {background-image: linear-gradient(light-dark(rgba(var(--light-purple-rgb), 0.75), rgba(var(--dark-purple-rgb), 0.75)), light-dark(rgba(var(--light-purple-rgb), 0.75), rgba(var(--dark-purple-rgb), 0.75))),url('../images/home-personal-bg.webp');}
-    #home-leather {background-image: linear-gradient(light-dark(rgba(var(--light-purple-rgb), 0.75), rgba(var(--dark-purple-rgb), 0.75)), light-dark(rgba(var(--light-purple-rgb), 0.75), rgba(var(--dark-purple-rgb), 0.75))),url('../images/home-leather-bg.jpg'); background-size: cover; background-position: center;}
+    #home-leather {background-image: linear-gradient(light-dark(rgba(var(--light-purple-rgb), 0.75), rgba(var(--dark-purple-rgb), 0.75)), light-dark(rgba(var(--light-purple-rgb), 0.75), rgba(var(--dark-purple-rgb), 0.75))),url('../images/home-leather-bg.webp'); background-size: cover; background-position: center;}
 
     /* ABOUT: Hero */
     #about-hero.background-image { background-image: linear-gradient(light-dark(rgba(var(--light-purple-rgb), var(--opacity-high)), rgba(var(--dark-purple-rgb), var(--opacity-high))), light-dark(rgba(var(--light-purple-rgb), var(--opacity-high)), rgba(var(--dark-purple-rgb), var(--opacity-high)))), url('../images/about-hero-bg.webp'); background-position: top center;}
